@@ -157,10 +157,13 @@ create/
 
 ## 安装
 
+**方法一：一键安装**
 ```bash
 npx skills add taxueseek/create
+```
 
-# 或
+**方法二：手动克隆**
+```bash
 git clone https://github.com/taxueseek/create .claude/skills/create
 ```
 
