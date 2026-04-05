@@ -227,6 +227,13 @@ npx skills add taxueseek/create
 
 ---
 
+## 相关项目
+
+- **[taxue](https://github.com/taxueseek/taxueskills)** — 问题解决系统，把模糊问题变成可执行行动
+- **[invest](https://github.com/taxueseek/fund-investment-guide)** — 投资分析系统，覆盖股票、基金、资产配置
+
+---
+
 ## 项目结构
 
 ```
