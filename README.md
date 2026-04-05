@@ -141,7 +141,7 @@ npx skills add taxueseek/create
 | skill | 功能 | 场景 |
 |:------|:-----|:-----|
 | **委员会.skill** (zaoren-committee) | 多角色集体决策 | 复杂问题需要多方视角投票决策 |
-| **编译器.skill** (zaoren-compile) | 将素材编译成可执行skill | 把零散经验固化为标准化流程 |
+| **打包器.skill** (zaoren-compile) | 把经验打包成可复用skill | 把零散经验固化为标准化流程 |
 | **圆桌.skill** (zaoren-roundtable) | 结构化多角色辩论 | 让不同skill按协议互相质询 |
 
 > 每个预设都不只是语气模板。投资人内置估值判断框架，导师内置论文评审决策树。语气是赠品，判断才是正餐。
@@ -240,7 +240,7 @@ create/
 ├── zaoren-boss/                 # 老板视角
 ├── zaoren-client/               # 甲方视角
 ├── zaoren-committee/            # 委员会视角 ⭐新增
-├── zaoren-compile/              # 编译器视角 ⭐新增
+├── zaoren-compile/              # 打包器：把经验做成skill ⭐新增
 ├── zaoren-investor/             # 投资人视角
 ├── zaoren-mentor/               # 导师视角
 ├── zaoren-munger/               # 芒格视角
