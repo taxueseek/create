@@ -8,6 +8,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-purple.svg)](https://claude.ai)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green.svg)](https://agentskills.io)
 
+还能造什么？造人造项目造圆桌，万物皆可造。这就是造物主的项目
 ---
 
 ## 学说话 vs 学办事
