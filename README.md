@@ -8,7 +8,7 @@
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-purple.svg)](https://claude.ai)
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green.svg)](https://agentskills.io)
 
-还能造什么？造人造项目造圆桌，万物皆可造。这就是造物主的项目
+还能造什么？造人造项目造产品，万物皆可造。这就是造物主的项目，单个的蒸馏、炼化，都是属于AI使用的初级阶段。把agent和真实的人类员工组合起来创造新世界，才是我们的天命
 ---
 
 ## 学说话 vs 学办事
