@@ -1,8 +1,17 @@
-# 造人.skill (taxueseek/create)
+# 造物.skill (taxueseek/create)
 
-> 给素材，造经验
+> 一起创造新世界
+>
+> 最初，我们把这个项目叫造人。
+>"你们搞大模型的简直是女娲，捏了同事，捏了前任，捏了老板，捏了导师，最后把自己也捏了一个，替自己上班。"
+> 那时候，我们像女娲一样，捏了前任、捏了老板、捏了导师，想让 AI 替我们上班。
+但很快我们发现，我们被人这个概念束缚了。于是便把它更名为造物。
 
-"你们搞大模型的简直是女娲，捏了同事，捏了前任，捏了老板，捏了导师，最后把自己也捏了一个，替自己上班。"
+真实的物理世界里，决定成败的往往不是某个人，一个人背后的组织才是决定这个世界走向的关键。
+单体 agent 的拟人化，只是 AI 使用的初级阶段。
+把隐藏在公文、财报、复盘报告背后的决策逻辑和思维方式，跟世间万物的本质提取出来，化作可以自由组合、推演碰撞的引擎，才是我们真正的天命。
+
+
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-purple.svg)](https://claude.ai)
