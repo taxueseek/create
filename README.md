@@ -12,7 +12,6 @@ License: MIT Claude Code AgentSkills
 > 「洞察 → 决策 → 执行」三层认知架构，让 AI 从聊天工具变成决策引擎。
 
 
-License: MIT Claude Code AgentSkills
 
 [![Version](https://img.shields.io/badge/version-v4.0-blue)](https://github.com/taxueseek/create/releases/tag/v4.0)
 [![Branch](https://img.shields.io/badge/backup-v3.0-green)](https://github.com/taxueseek/create/tree/backup/v3.0)
