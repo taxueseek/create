@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>踏雪问题解决器</title>
+<style>
+  :root {
+    --bg:        #1C1B19;
+    --surface:   #242320;
+    --surface-2: #2C2B28;
+    --border:    #333230;
+    --border-h:  #4a4845;
+    --accent:    #D97757;
+    --accent-dim:#B8623F;
+    --text:      #E8E3DC;
+    --text-2:    #9B9690;
+    --text-3:    #5A5753;
+    --tag:       #3D3A36;
+    --tag-text:  #A09B94;
+    --radius:    14px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: var(--text-3);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .brand::before,
+  .brand::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--border);
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    color: var(--text);
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  h1 strong {
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: var(--text-3);
+    letter-spacing: 0.01em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 580px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s, transform 0.1s;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(217,119,87,0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+
+  .card:hover {
+    background: var(--surface-2);
+    border-color: var(--border-h);
+    transform: translateY(-1px);
+  }
+
+  .card:hover::before { opacity: 1; }
+  .card:active { transform: translateY(0); }
+
+  .card-tag {
+    font-size: 10px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: var(--tag-text);
+    background: var(--tag);
+    padding: 2px 7px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+    letter-spacing: -0.01em;
+  }
+
+  .card-desc {
+    font-size: 12px;
+    color: var(--text-2);
+    line-height: 1.45;
+  }
+
+  .card-custom {
+    grid-column: 1 / -1;
+    background: transparent;
+    border: 1px dashed var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .card-custom:hover {
+    background: var(--surface);
+    border-color: var(--accent-dim);
+    border-style: solid;
+  }
+
+  .card-custom .card-title { color: var(--text-2); font-size: 13px; }
+  .card-custom .card-desc  { color: var(--text-3); }
+
+  .custom-icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: var(--tag);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+    color: var(--text-2);
+  }
+
+  .done {
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .done-check {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dim));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    margin: 0 auto 20px;
+  }
+
+  .done h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .done p { font-size: 13px; color: var(--text-3); }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="brand">踏雪寻仙 &nbsp;·&nbsp; 公众号同名</div>
+  <h1>卡在<strong>哪</strong>了？</h1>
+  <p class="subtitle">选一个，或者直接说</p>
+</div>
+
+<div class="grid" id="grid">
+  <div class="card" onclick="pick('think')">
+    <div class="card-tag">/think</div>
+    <div class="card-title">想不清楚</div>
+    <div class="card-desc">纠结、不确定、没头绪</div>
+  </div>
+  <div class="card" onclick="pick('solve')">
+    <div class="card-tag">/solve</div>
+    <div class="card-title">不知道怎么做</div>
+    <div class="card-desc">要答案、出错了、卡住了</div>
+  </div>
+  <div class="card" onclick="pick('breakdown')">
+    <div class="card-tag">/breakdown</div>
+    <div class="card-title">事情太多</div>
+    <div class="card-desc">拆解任务、安排优先级</div>
+  </div>
+  <div class="card" onclick="pick('search')">
+    <div class="card-tag">/search</div>
+    <div class="card-title">信息不够</div>
+    <div class="card-desc">查资料、搜信息</div>
+  </div>
+  <div class="card" onclick="pick('learn')">
+    <div class="card-tag">/learn</div>
+    <div class="card-title">想学东西</div>
+    <div class="card-desc">学习方法、掌握知识</div>
+  </div>
+  <div class="card" onclick="pick('build')">
+    <div class="card-tag">/build</div>
+    <div class="card-title">重复做事</div>
+    <div class="card-desc">做模板、建流程</div>
+  </div>
+  <div class="card" onclick="pick('roundtable')">
+    <div class="card-tag">/roundtable</div>
+    <div class="card-title">换个角度看</div>
+    <div class="card-desc">多专家圆桌讨论</div>
+  </div>
+  <div class="card card-custom" onclick="askCustom()">
+    <div class="custom-icon">✏</div>
+    <div>
+      <div class="card-title">直接描述我的问题</div>
+      <div class="card-desc">说出来，我来判断方向</div>
+    </div>
+  </div>
+</div>
+
+<script>
+function pick(skill) {
+  fetch('/select', { method: 'POST', body: skill }).then(() => showDone(skill));
+}
+function askCustom() {
+  const text = prompt('说说看，卡哪了');
+  if (text && text.trim()) {
+    fetch('/select', { method: 'POST', body: 'custom:' + text.trim() }).then(() => showDone('custom'));
+  }
+}
+function showDone(skill) {
+  document.body.innerHTML = `
+    <div class="done">
+      <div class="done-check">✓</div>
+      <h2>已收到</h2>
+      <p>切回 Claude 继续</p>
+    </div>`;
+}
+</script>
+</body>
+</html>
