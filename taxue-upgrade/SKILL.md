@@ -40,7 +40,7 @@ description: |
 ```
 发现 3 个 skill 可升级：
 
-1. zaoren-boss    本地: v3.1  →  远程: v4.0  [推荐]
+1. zaoren-drucker    本地: v3.1  →  远程: v4.1  [推荐]
 2. taxue-build    本地: v2.0  →  远程: v2.1  [推荐]
 
 操作：

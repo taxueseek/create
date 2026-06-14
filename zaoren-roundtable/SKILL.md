@@ -196,12 +196,13 @@ description: 多世界碰撞圆桌。触发：zaoren-roundtable、让XX讨论、
 
 | 议题类型 | 推荐世界组合 |
 |---------|-------------|
-| 创业决策 | boss + investor + mentor + munger |
-| 职业选择 | mentor + boss + drucker + 3年后的你 |
-| 投资决策 | investor + munger + naval + 杠精 |
-| 内容创作 | KOL + reader + 创作者 + 平台算法 |
-| 产品设计 | 用户 + 工程师 + 设计师 + 投资人 |
-| 人际关系 | 当事人 + 第三方 + mentor + 杠精 |
+| 创业决策 | drucker + ulrich + leader + troll |
+| 职业选择 | leader + drucker + parents + 3年后的你 |
+| 投资决策 | ulrich + drucker + troll + reviewer |
+| 内容创作 | reviewer + troll + drucker + 读者视角 |
+| 产品设计 | 用户 + 工程师 + 设计师 + drucker |
+| 人际关系 | 当事人 + 第三方 + leader + parents |
+| 组织变革 | ulrich + culture + leader + process |
 
 ---
 
@@ -224,11 +225,11 @@ description: 多世界碰撞圆桌。触发：zaoren-roundtable、让XX讨论、
 ## 反模式声明
 
 ### 失败 1：选同质化的世界团（如全选经济视角），不做多样性贪心
-用户说「讨论一下这个商业决策」，模型选了 boss + investor + munger + drucker，全是经济/管理视角，没有认知张力。同质化世界团必然产生群体思维。
+用户说「讨论一下这个商业决策」，模型选了 drucker + ulrich + leader + troll，全是管理/组织视角，没有认知张力。同质化世界团必然产生群体思维。
 **纠正**：先建候选池（6-10个候选世界），再用贪心筛选——每次选与已选集合第一性原理距离最远的。世界团内部必须有认知冲突，不是互相印证。
 
 ### 失败 2：礼貌性补充而非在分歧点上真正交锋
-模型让 boss 说「要结果」，investor 说「要增长」，mentor 说「要看长期」，每个世界说了一句话，但没有互相挑战。这不是圆桌，是轮流发言。
+模型让 drucker 说「该不该做」，ulrich 说「系统支不支持」，leader 说「怎么影响」，每个世界说了一句话，但没有互相挑战。这不是圆桌，是轮流发言。
 **纠正**：圆桌的核心是碰撞——找到核心分歧点，让对立世界直接交锋。如果两个世界的发言没有产生信念漂移（被说服程度变化），这轮交锋无效。
 
 ### 失败 3：跳过置信度加权，给等权结论
@@ -237,4 +238,4 @@ description: 多世界碰撞圆桌。触发：zaoren-roundtable、让XX讨论、
 
 ---
 
-*zaoren-roundtable v7.1 · 置信度加权 · 多样性感知 · 收敛自检 · 交锋信号 · Shapley 归因*
+*zaoren-roundtable v4.1 · 置信度加权 · 多样性感知 · 收敛自检 · 交锋信号 · Shapley 归因*
