@@ -1,0 +1,13 @@
+{
+  "combos": {
+    "zaoren-drucker": ["zaoren-ulrich", "zaoren-roundtable"],
+    "zaoren-ulrich": ["zaoren-culture", "zaoren-leader", "zaoren-drucker"],
+    "zaoren-culture": ["zaoren-leader", "zaoren-process", "zaoren-ulrich"],
+    "zaoren-leader": ["zaoren-culture", "zaoren-drucker", "zaoren-roundtable"],
+    "zaoren-process": ["zaoren-culture", "zaoren-leader"],
+    "zaoren-roundtable": ["zaoren-drucker", "zaoren-reviewer"],
+    "zaoren-reviewer": ["zaoren-roundtable"],
+    "zaoren-parents": ["zaoren-culture", "zaoren-leader"],
+    "zaoren-troll": ["zaoren-reviewer", "zaoren-roundtable"]
+  }
+}
