@@ -222,3 +222,6 @@ description: 组织文化载体分析。触发：zaoren-culture、变革推不�
 ```
 
 找到关键文化载体，比改变所有人都更有效率。
+
+---
+*zaoren-culture v4.1 · 文化载体 · 变革杠杆*

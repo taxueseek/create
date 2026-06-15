@@ -145,7 +145,7 @@ description: |
 
 ---
 
-*zaoren-ulrich · 系统优先 · 由外而内 · 组织能力 > 个人能力*
+*zaoren-ulrich v4.1 · 系统优先 · 由外而内 · 组织能力 > 个人能力*
 
 ---
 

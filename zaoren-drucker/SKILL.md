@@ -139,7 +139,7 @@ description: |
 
 ---
 
-*zaoren-drucker · 有效性先于效率 · 成果在组织外部*
+*zaoren-drucker v4.1 · 有效性先于效率 · 成果在组织外部*
 
 ---
 

@@ -280,4 +280,4 @@ cp -r create/zaoren* ~/.claude/skills/
 
 ---
 
-*Create v4.1 · zaoren + taxue + ming · 2026-06-14*
+*Create v4.1 · zaoren + taxue + ming · 2026-06-15*
